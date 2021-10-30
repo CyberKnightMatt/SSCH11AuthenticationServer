@@ -46,6 +46,7 @@ public class UserService {
 
     private void renewOtp(User u) {
         String code = GenerateCodeUtil.generateCode();
+
         Optional<Otp> userOtp = otpRepository.findOtpByUsername(u.getUsername());
         if (userOtp.isPresent()) {
             Otp otp = userOtp.get();

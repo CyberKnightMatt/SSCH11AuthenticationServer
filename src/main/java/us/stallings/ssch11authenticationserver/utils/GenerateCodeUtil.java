@@ -5,8 +5,6 @@ import java.security.SecureRandom;
 
 public final class GenerateCodeUtil {
 
-    private GenerateCodeUtil() {}
-
     public static String generateCode() {
         String code;
         try {
